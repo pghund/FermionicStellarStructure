@@ -1,0 +1,33 @@
+#set terminal postscript color font "Helvetica, 14" linewidth 2
+set output "SurfacePlot1.pdf"
+set terminal pdf
+
+#replot
+pause -1 "Hit any key to continue"
+
+set xlabel "x-axis" font "Helvetica, 14"
+set ylabel "z-axis" font "Helvetica, 14"
+set tics font "Helvetica, 14"
+set key font ",14"
+set title "Surface plot" font "Helvetica, 14"
+#set key left bottom
+
+plot "ElectronCurve1.txt" using 1:2 with lines lc rgb "green" title "Electron Surface", "ProtonCurve1.txt" using 1:2 with lines lc rgb "red" title "Proton Surface"
+
+set output "SurfacePlot2.pdf"
+plot "ElectronCurve2.txt" using 1:2 with lines lc rgb "green" title "Electron Surface", "ProtonCurve2.txt" using 1:2 with lines lc rgb "red" title "Proton Surface"
+
+set output "SurfacePlot3.pdf"
+plot "ElectronCurve3.txt" using 1:2 with lines lc rgb "green" title "Electron Surface", "ProtonCurve3.txt" using 1:2 with lines lc rgb "red" title "Proton Surface"
+
+set output "SurfacePlot4.pdf"
+plot "ElectronCurve4.txt" using 1:2 with lines lc rgb "green" title "Electron Surface", "ProtonCurve4.txt" using 1:2 with lines lc rgb "red" title "Proton Surface"
+
+set output "SurfacePlot5.pdf"
+plot "ElectronCurve5.txt" using 1:2 with lines lc rgb "green" title "Electron Surface", "ProtonCurve5.txt" using 1:2 with lines lc rgb "red" title "Proton Surface"
+
+set output "SurfacePlot6.pdf"
+plot "ElectronCurve6.txt" using 1:2 with lines lc rgb "green" title "Electron Surface", "ProtonCurve6.txt" using 1:2 with lines lc rgb "red" title "Proton Surface"
+
+set output "SurfacePlot7.pdf"
+plot "ElectronCurve7.txt" using 1:2 with lines lc rgb "green" title "Electron Surface", "ProtonCurve7.txt" using 1:2 with lines lc rgb "red" title "Proton Surface"
