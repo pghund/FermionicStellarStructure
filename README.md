@@ -10,3 +10,5 @@ densities for each iteration, with an initial starting guess the solution of the
 
 Since my generalization of the Hachisu code has not worked, I have tried to solve for the densities using a simple gradient descent method. There is a file in my BosonicStars repository in which I explain how I have applied graident descent to that system; the application to this system is essentially the same. Unfortunately I cannot get this to converge either.  
 
+The 2 species Williams file is a working generalization of the P.S. Williams one species code. Unfortunately, it currently only works for very small rotations, so that the oblateness of the star is not visible to the naked eye (it can be seen in the numerical output). I hope to soon get it to where I can have higher rotation speeds, with the hope that I can look for bifurcation diagrams as found in papers such as Hachisu's.
+
